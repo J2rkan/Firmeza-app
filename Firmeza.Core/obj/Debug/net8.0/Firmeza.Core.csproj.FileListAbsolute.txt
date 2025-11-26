@@ -34,3 +34,16 @@ C:/Users/miram/Source/Repos/Firmeza-Administrative-Application-for-Construction-
 /home/Coder/RiderProjects/Firmeza-Administrative-Application-for-Construction-Supplies-Sales-and-Industrial-Vehicle-Rentals/Firmeza.Core/obj/Debug/net8.0/refint/Firmeza.Core.dll
 /home/Coder/RiderProjects/Firmeza-Administrative-Application-for-Construction-Supplies-Sales-and-Industrial-Vehicle-Rentals/Firmeza.Core/obj/Debug/net8.0/Firmeza.Core.pdb
 /home/Coder/RiderProjects/Firmeza-Administrative-Application-for-Construction-Supplies-Sales-and-Industrial-Vehicle-Rentals/Firmeza.Core/obj/Debug/net8.0/ref/Firmeza.Core.dll
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\bin\Debug\net8.0\Firmeza.Core.deps.json
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\bin\Debug\net8.0\Firmeza.Core.dll
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\bin\Debug\net8.0\Firmeza.Core.pdb
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\Firmeza.Core.csproj.AssemblyReference.cache
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\Firmeza.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\Firmeza.Core.AssemblyInfoInputs.cache
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\Firmeza.Core.AssemblyInfo.cs
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\Firmeza.Core.csproj.CoreCompileInputs.cache
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\Firmeza.Core.sourcelink.json
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\Firmeza.Core.dll
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\refint\Firmeza.Core.dll
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\Firmeza.Core.pdb
+C:\Users\miram\Desktop\todaslascarpetas\antigrativy\Firmeza-app\Firmeza.Core\obj\Debug\net8.0\ref\Firmeza.Core.dll

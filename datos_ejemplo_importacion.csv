@@ -1,0 +1,16 @@
+ClientName,ClientDocument,ClientEmail,ProductName,Quantity,Price
+Juan Pérez,12345678,juan.perez@email.com,Cemento Portland,50,25.5
+María González,87654321,maria.gonzalez@email.com,Arena Fina,100,15
+Juan Pérez,12345678,juan.perez@email.com,Grava Triturada,75,18.75
+Carlos Rodríguez,11223344,carlos.rodriguez@email.com,Ladrillo Rojo,200,0.85
+Ana Martínez,55667788,ana.martinez@email.com,Cemento Portland,30,25.5
+María González,87654321,maria.gonzalez@email.com,Varilla 3/8,120,12
+Luis Fernández,99887766,luis.fernandez@email.com,Alambre Recocido,50,8.5
+Juan Pérez,12345678,juan.perez@email.com,Arena Fina,80,15
+Carlos Rodríguez,11223344,carlos.rodriguez@email.com,Grava Triturada,60,18.75
+Ana Martínez,55667788,ana.martinez@email.com,Ladrillo Rojo,150,0.85
+Pedro Sánchez,22334455,pedro.sanchez@email.com,Cemento Portland,40,25.5
+Laura Torres,66778899,laura.torres@email.com,Varilla 3/8,90,12
+Juan Pérez,12345678,juan.perez@email.com,Alambre Recocido,35,8.5
+María González,87654321,maria.gonzalez@email.com,Ladrillo Rojo,180,0.85
+Carlos Rodríguez,11223344,carlos.rodriguez@email.com,Cemento Portland,55,25.5

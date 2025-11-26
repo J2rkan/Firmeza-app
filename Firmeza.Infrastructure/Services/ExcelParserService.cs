@@ -8,8 +8,8 @@ namespace Firmeza.Infrastructure.Services
         
         public ExcelParserService()
         {
-            // Configurar EPPlus para uso no comercial
-          //  ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            // Configurar EPPlus para uso no comercial personal (EPPlus 8+)
+            ExcelPackage.License.SetNonCommercialPersonal("Firmeza App");
         }
 
         public async Task<List<Dictionary<string, string>>> ParseExcelDataAsync(Stream fileStream)
