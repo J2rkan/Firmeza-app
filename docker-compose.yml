@@ -5,10 +5,10 @@ services:
     image: postgres:15-alpine
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: your_password
+      POSTGRES_PASSWORD: Admin123!
       POSTGRES_DB: FirmezaDB
     ports:
-      - "5432:5432"
+      - "5434:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
@@ -21,7 +21,7 @@ services:
     ports:
       - "5000:8080"
     environment:
-      - ConnectionStrings__DefaultConnection=Host=db;Database=FirmezaDB;Username=postgres;Password=your_password
+      - ConnectionStrings__DefaultConnection=Host=db;Database=FirmezaDB;Username=postgres;Password=Admin123!
       - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - db
@@ -35,7 +35,7 @@ services:
     ports:
       - "5001:8080"
     environment:
-      - ConnectionStrings__DefaultConnection=Host=db;Database=FirmezaDB;Username=postgres;Password=your_password
+      - ConnectionStrings__DefaultConnection=Host=db;Database=FirmezaDB;Username=postgres;Password=Admin123!
       - ASPNETCORE_ENVIRONMENT=Development
       - Jwt__Key=ThisIsAVerySecureSecretKeyForJWTTokenGeneration123456
       - Jwt__Issuer=FirmezaApi
