@@ -9,3 +9,4 @@ namespace Firmeza.Application.Interfaces
         Task<ImportLogViewModel> ImportDataAsync(Stream fileStream);
     }
 }
+/// coment 
