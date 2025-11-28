@@ -187,10 +187,17 @@ app.UseAuthorization();
 app.MapControllers();
 
 // Log de inicio
-var logger = app.Services.GetRequiredService<ILogger<Program>>();
-logger.LogInformation("🚀 Firmeza API iniciada correctamente");
-logger.LogInformation($"🌍 Entorno: {app.Environment.EnvironmentName}");
-logger.LogInformation($"📚 Swagger UI disponible en: {app.Urls.FirstOrDefault() ?? "http://localhost:8080"}");
+// Log de inicio
+try 
+{
+    var logger = app.Services.GetRequiredService<ILogger<Program>>();
+    logger.LogInformation("🚀 Firmeza API iniciada correctamente");
+    logger.LogInformation($"🌍 Entorno: {app.Environment.EnvironmentName}");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Error al iniciar logger: {ex.Message}");
+}
 
 app.Run();
 
