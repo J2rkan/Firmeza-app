@@ -115,14 +115,27 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// Configurar CORS
+// Configurar CORS - Permitir orígenes específicos en producción
+var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>() 
+    ?? new[] { "http://localhost:3000", "http://localhost:5000" };
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
+        if (builder.Environment.IsDevelopment())
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        }
+        else
+        {
+            policy.WithOrigins(allowedOrigins)
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                  .AllowCredentials();
+        }
     });
 });
 
@@ -144,17 +157,27 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Configure the HTTP request pipeline
-if (app.Environment.IsDevelopment())
+// Habilitar Swagger en todos los entornos para Clever Cloud
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Firmeza API v1");
-        options.RoutePrefix = string.Empty; // Swagger en la raíz
-    });
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Firmeza API v1");
+    options.RoutePrefix = string.Empty; // Swagger en la raíz
+});
 
-app.UseHttpsRedirection();
+// Solo usar HTTPS redirection en producción si está configurado
+if (!app.Environment.IsDevelopment())
+{
+    var useHttpsRedirection = builder.Configuration.GetValue<bool>("UseHttpsRedirection", false);
+    if (useHttpsRedirection)
+    {
+        app.UseHttpsRedirection();
+    }
+}
+else
+{
+    app.UseHttpsRedirection();
+}
 
 app.UseCors("AllowAll");
 
@@ -162,6 +185,19 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Log de inicio
+// Log de inicio
+try 
+{
+    var logger = app.Services.GetRequiredService<ILogger<Program>>();
+    logger.LogInformation("🚀 Firmeza API iniciada correctamente");
+    logger.LogInformation($"🌍 Entorno: {app.Environment.EnvironmentName}");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Error al iniciar logger: {ex.Message}");
+}
 
 app.Run();
 
