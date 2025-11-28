@@ -216,3 +216,7 @@ TestResults/
 # *.7z
 # *.tar
 # *.gz
+
+# Ocultar secretos de entorno
+.env
+.env.*
