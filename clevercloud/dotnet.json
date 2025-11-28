@@ -2,8 +2,5 @@
     "build": {
         "type": "dotnet",
         "version": "8.0"
-    },
-    "deploy": {
-        "appFolder": "Firmeza.Api"
     }
 }
